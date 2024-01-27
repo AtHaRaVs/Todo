@@ -23,12 +23,12 @@ export default function TodoForm({ addTodo }) {
     >
       <form onSubmit={handleSubmit}>
         <TextField
+          style={{ margin: 10 }}
           id="standard-basic"
           label="Whats on your mind"
-          variant="standard"
+          variant="outlined"
           onChange={handleChange}
           value={text}
-          style={{ marginTop: "30px" }}
         />
       </form>
     </ListItem>
