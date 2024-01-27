@@ -6,6 +6,7 @@ import Checkbox from "@mui/material/Checkbox";
 import DeleteIcon from "@mui/icons-material/Delete";
 import IconButton from "@mui/material/IconButton";
 import PropTypes from "prop-types";
+import { Typography } from "@mui/material";
 
 export default function TodoItem({ todo, remove, toggle }) {
   const labelId = `checkbox-list-label-${todo.id}`;
@@ -35,7 +36,10 @@ export default function TodoItem({ todo, remove, toggle }) {
             onChange={toggleTodo}
           />
         </ListItemIcon>
-        <ListItemText id={labelId} primary={todo.text} />
+        <ListItemText
+          id={labelId}
+          primary={<Typography noWrap>{todo.text}</Typography>}
+        />
       </ListItemButton>
     </ListItem>
   );
