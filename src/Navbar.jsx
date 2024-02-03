@@ -11,30 +11,14 @@ export default function Navbar() {
         style={{ backgroundColor: "#EB3936" }}
         enableColorOnDark
       >
-        <Toolbar sx={{ mr: 10 }}>
+        <Toolbar>
           <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1 }}
             style={{ textAlign: "center", fontWeight: 300, color: "black" }}
           >
-            Do one thing that
-          </Typography>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1 }}
-            style={{ textAlign: "center", fontWeight: 800, color: "black" }}
-          >
-            S U C K
-          </Typography>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1 }}
-            style={{ textAlign: "center", fontWeight: 300, color: "black" }}
-          >
-            everyday!
+            Do one thing that S U C K everyday
           </Typography>
         </Toolbar>
       </AppBar>

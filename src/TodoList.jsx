@@ -6,6 +6,10 @@ import TodoForm from "./TodoForm";
 import { Box, Typography } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import QuoteCard from "./QuoteCard";
+import Grid from "@mui/system/Unstable_Grid";
+import YoutubeIntegration from "./YoutubeLinks/Lofi";
+import Rain from "./YoutubeLinks/Rain";
+import Timer from "./Timer";
 
 const getInitialData = () => {
   const data = JSON.parse(localStorage.getItem("todos"));
@@ -45,7 +49,12 @@ export default function TodoList() {
   };
 
   return (
-    <Box sx={{ m: 3 }}>
+    <Box
+      sx={{
+        m: 3,
+        height: 800,
+      }}
+    >
       <Typography
         variant="h2"
         component="h1"
@@ -75,12 +84,18 @@ export default function TodoList() {
           sx={{
             mt: 3,
             width: "50%",
-            maxWidth: 360,
+            height: "500px",
+            maxWidth: "50%",
+            maxHeight: "500px",
+            overflow: "auto",
+            "&::-webkit-scrollbar": {
+              width: "0.5em",
+            },
+            "&::-webkit-scrollbar-thumb": {
+              backgroundColor: "darkgray",
+              outline: "1px solid slategrey",
+            },
             bgcolor: "background.paper",
-            display: "flex",
-            justifyContent: "flex-start",
-            flexDirection: "column",
-            alignItems: "center",
           }}
         >
           {todos.map((todo) => (
@@ -97,13 +112,31 @@ export default function TodoList() {
         </List>
         <Box
           sx={{
+            mt: 3,
+            ml: 3,
             width: "50%",
-            m: 3,
-            display: "flex",
-            justifyContent: "flex-end",
+            height: "500px",
+            maxWidth: "50%",
+            maxHeight: "500px",
+            gridTemplateColumns: "1fr 1fr",
+            gridTemplateRows: "1fr 1fr",
+            gridGap: "8px",
           }}
         >
-          <QuoteCard />
+          <Grid>
+            <Grid xs={100}>
+              <QuoteCard />
+            </Grid>
+            <Grid xs={100}>
+              <YoutubeIntegration />
+            </Grid>
+            <Grid xs={100}>
+              <Rain />
+            </Grid>
+            <Grid xs={100}>
+              <Timer />
+            </Grid>
+          </Grid>
         </Box>
       </Box>
     </Box>

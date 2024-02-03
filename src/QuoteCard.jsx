@@ -26,7 +26,7 @@ export default function QuoteCard() {
   }, []); // The empty dependency array ensures this effect runs only once when the component mounts
 
   return (
-    <Card sx={{ maxWidth: "50%", backgroundColor: "white" }}>
+    <Card sx={{ maxWidth: "100%", backgroundColor: "white" }}>
       <CardActionArea>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" color="#EB3936">
