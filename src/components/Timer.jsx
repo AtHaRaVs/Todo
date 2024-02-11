@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./timer.css";
+import colors from "../colours/colors";
 
 export default function Timer() {
   const [sec, setSec] = useState(0);
@@ -71,7 +72,19 @@ export default function Timer() {
             alignItems: "center",
           }}
         >
-          <p className="Pomo">Pomodore</p>
+          <p className="Pomo">
+            <b>Pomodore: </b>
+          </p>
+          <p
+            className="flows"
+            style={{
+              maxWidth: "100%",
+              height: "100%",
+              alignItems: "center",
+            }}
+          >
+            You did <b>{flows} </b>flows
+          </p>
           <h3 className="time">
             {hrs < 10 ? "0" + hrs : hrs}:{min < 10 ? "0" + min : min}:
             {sec < 10 ? "0" + sec : sec}
@@ -81,13 +94,15 @@ export default function Timer() {
               className="start"
               onClick={start}
               style={{
-                padding: "20px",
+                fontSize: "12px",
+                padding: "18px",
                 fontFamily: "monospace",
-                backgroundColor: "#EB3936",
-                color: "white",
+                backgroundColor: colors.primary_purple,
+                color: colors.primary_white,
                 border: "none",
                 borderRadius: "5px",
                 margin: "1px",
+                transition: "background-color 0.3s ease",
               }}
             >
               {!everStarted ? "Start" : "Resume"}
@@ -96,10 +111,11 @@ export default function Timer() {
               className="stop"
               onClick={stop}
               style={{
-                padding: "20px",
+                fontSize: "12px",
+                padding: "18px",
                 fontFamily: "monospace",
-                backgroundColor: "#EB3936",
-                color: "white",
+                backgroundColor: colors.primary_purple,
+                color: colors.primary_white,
                 border: "none",
                 borderRadius: "5px",
                 margin: "1px",
@@ -111,10 +127,11 @@ export default function Timer() {
               className="restart"
               onClick={restart}
               style={{
-                padding: "20px",
+                fontSize: "12px",
+                padding: "18px",
                 fontFamily: "monospace",
-                backgroundColor: "#EB3936",
-                color: "white",
+                backgroundColor: colors.primary_purple,
+                color: colors.primary_white,
                 border: "none",
                 borderRadius: "5px",
                 margin: "1px",
@@ -125,16 +142,6 @@ export default function Timer() {
           </div>
         </div>
       </div>
-      <p
-        className="flows"
-        style={{
-          maxWidth: "100%",
-          height: "100%",
-          alignItems: "center",
-        }}
-      >
-        You did {flows} flows
-      </p>
     </div>
   );
 }

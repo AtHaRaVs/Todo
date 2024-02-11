@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
+import colors from "../colours/colors";
 
 export default function QuoteCard() {
   const [quote, setQuote] = useState(null);
@@ -26,14 +27,19 @@ export default function QuoteCard() {
   }, []); // The empty dependency array ensures this effect runs only once when the component mounts
 
   return (
-    <Card sx={{ maxWidth: "100%", backgroundColor: "white" }}>
+    <Card sx={{ maxWidth: "100%", backgroundColor: colors.primary_black }}>
       <CardActionArea>
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" color="#EB3936">
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            color={colors.primary_purple}
+          >
             {quote ? quote.text : "Loading..."}
           </Typography>
           {quote && (
-            <Typography variant="body2" color="black">
+            <Typography variant="body2" color={colors.primary_white}>
               - {quote.author || "Unknown"}
             </Typography>
           )}

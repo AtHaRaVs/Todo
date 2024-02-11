@@ -6,9 +6,7 @@ import TodoForm from "./TodoForm";
 import { Box, Typography } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import QuoteCard from "./QuoteCard";
-import Grid from "@mui/system/Unstable_Grid";
-import YoutubeIntegration from "./YoutubeLinks/Lofi";
-import Rain from "./YoutubeLinks/Rain";
+import YoutubeIntegration from "../YoutubeLinks/Lofi";
 import Timer from "./Timer";
 
 const getInitialData = () => {
@@ -96,6 +94,9 @@ export default function TodoList() {
               outline: "1px solid slategrey",
             },
             bgcolor: "background.paper",
+            border: "1px solid #EB3936",
+            borderRadius: "5px",
+            p: 2,
           }}
         >
           {todos.map((todo) => (
@@ -118,52 +119,51 @@ export default function TodoList() {
             height: "500px",
             maxWidth: "50%",
             maxHeight: "500px",
-            gridTemplateColumns: "1fr 1fr",
-            gridTemplateRows: "1fr 1fr",
-            gridGap: "8px",
+            display: "flex",
+            flexDirection: "column",
+            border: "1px solid #EB3936",
+            borderRadius: "5px",
+            p: 2,
           }}
         >
-          <Grid>
-            <Grid xs={100}>
-              <QuoteCard />
-            </Grid>
-            <Grid xs={100}>
-              <YoutubeIntegration />
-            </Grid>
-            <Grid xs={100}>
-              <Rain />
-            </Grid>
-            <Grid xs={100}>
-              <Timer />
-            </Grid>
-          </Grid>
+          <Box>
+            <Timer />
+          </Box>
+          <hr />
+          <Box>
+            <QuoteCard />
+          </Box>
+          <hr />
+          <Box sx={{ flexGrow: "1" }}>
+            <YoutubeIntegration />
+          </Box>
         </Box>
       </Box>
     </Box>
   );
 }
 
-// export default function CheckboxList() {
-//   const [checked, setChecked] = React.useState([0]);
+{
+  /*   
+            </Grid>
+            <Grid xs={12}>
+              
+            </Grid>
+            <Grid xs={12}> */
+}
 
-//   const handleToggle = (value: number) => () => {
-//     const currentIndex = checked.indexOf(value);
-//     const newChecked = [...checked];
-
-//     if (currentIndex === -1) {
-//       newChecked.push(value);
-//     } else {
-//       newChecked.splice(currentIndex, 1);
-//     }
-
-//     setChecked(newChecked);
-//   };
-
-//   return (
-//     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-//       {[0, 1, 2, 3].map((value) => {
-
-//       })}
-//     </List>
-//   );
-// }
+{
+  /* <Grid>
+            <Grid xs={100}>
+              <QuoteCard />
+            </Grid>
+            <Grid xs={100}>
+              <Timer />
+            </Grid>
+          </Grid>
+          <Grid
+            sx={{ gridColumn: "span 2", gridRow: "span 2", maxWidth: "100%" }}
+          >
+            <YoutubeIntegration />
+          </Grid> */
+}
