@@ -4,7 +4,9 @@
 ![screencapture-atharavs-github-io-Todo-2024-02-11-09_51_30](https://github.com/AtHaRaVs/Todo/assets/99896281/9b5d6ac8-b0a5-45a7-ba8f-4cd4650e72bc)
 Older UI 
 
-![Screenshot 2024-02-17 080854](https://github.com/AtHaRaVs/Todo/assets/99896281/133bac9e-ebc4-401a-b66f-86962178f37b)
+![image](https://github.com/AtHaRaVs/Todo/assets/99896281/c91821cd-9fc2-44b6-9c2f-919b7d0b1aac)
+![image](https://github.com/AtHaRaVs/Todo/assets/99896281/96e7b05d-2c7a-4d03-ad1c-f0233db37e0c)
+![image](https://github.com/AtHaRaVs/Todo/assets/99896281/c35f2b30-f383-4497-82e4-89b1dcbfd516)
 Newer UI
 
 
