@@ -1,9 +1,10 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import NewTodoList from "./components/newTodoList";
+
 import Divider from "@mui/material/Divider";
 import colors from "./colours/colors";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
@@ -14,10 +15,10 @@ function App() {
         sx={{
           width: "100%",
           height: "1px",
-          backgroundColor: colors.primary_white,
+          backgroundColor: colors.primary_gold,
         }}
       />
-      <NewTodoList />
+      <TodoList />
     </>
   );
 }

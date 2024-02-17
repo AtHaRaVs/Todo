@@ -8,7 +8,8 @@ import IconButton from "@mui/material/IconButton";
 import PropTypes from "prop-types";
 import { Typography } from "@mui/material";
 import colors from "../colours/colors";
-import { color } from "framer-motion";
+import "./todolist.css";
+import { ClassNames } from "@emotion/react";
 
 export default function TodoItem({ todo, remove, toggle }) {
   const labelId = `checkbox-list-label-${todo.id}`;
@@ -22,7 +23,7 @@ export default function TodoItem({ todo, remove, toggle }) {
     <ListItem
       secondaryAction={
         <IconButton edge="end" aria-label="comments" onClick={removeTodo}>
-          <DeleteIcon style={{ color: colors.primary_purple }} />
+          <DeleteIcon style={{ color: colors.primary_green }} />
         </IconButton>
       }
       disablePadding
@@ -36,14 +37,14 @@ export default function TodoItem({ todo, remove, toggle }) {
             disableRipple
             inputProps={{ "aria-labelledby": labelId }}
             onChange={toggleTodo}
-            style={{ color: colors.primary_purple }}
+            style={{ color: colors.primary_green }}
           />
         </ListItemIcon>
         <ListItemText
           id={labelId}
           primary={
-            <Typography noWrap style={{ fontFamily: "serif" }}>
-              {todo.text}
+            <Typography noWrap>
+              <div className="allListItems ">{todo.text}</div>
             </Typography>
           }
         />

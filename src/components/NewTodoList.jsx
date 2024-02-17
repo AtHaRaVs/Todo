@@ -9,6 +9,7 @@ import QuoteCard from "./QuoteCard";
 import YoutubeIntegration from "../YoutubeLinks/Lofi";
 import Timer from "./Timer";
 import colors from "../colours/colors";
+import "./todolist.css";
 
 const getInitialData = () => {
   const data = JSON.parse(localStorage.getItem("todos"));
@@ -57,22 +58,21 @@ export default function NewTodoList() {
       <Box
         sx={{
           backgroundColor: colors.primary_black,
-          width: "25%",
-          boxShadowz: 10,
+          width: "20%",
+          boxShadowz: 20,
         }}
       >
         <h3
+          className="heading"
           style={{
             color: colors.primary_white,
             paddingLeft: "10px",
-            fontFamily: "sans-serif",
-            fontSize: "20px",
           }}
         >
           Today
         </h3>
         <Divider
-          sx={{ width: "100%", mt: 3, backgroundColor: colors.primary_white }}
+          sx={{ width: "100%", mt: 3, backgroundColor: colors.primary_gold }}
         />
         <List
           sx={{
@@ -89,7 +89,6 @@ export default function NewTodoList() {
             },
             bgcolor: colors.primary_black,
             color: colors.primary_white,
-            fontFamily: "sans-serif",
           }}
         >
           {todos.map((todo) => (

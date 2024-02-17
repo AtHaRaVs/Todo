@@ -34,7 +34,7 @@ export default function QuoteCard() {
             gutterBottom
             variant="h5"
             component="div"
-            color={colors.primary_purple}
+            color={colors.primary_gold}
           >
             {quote ? quote.text : "Loading..."}
           </Typography>

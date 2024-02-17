@@ -97,11 +97,11 @@ export default function Timer() {
                 fontSize: "12px",
                 padding: "18px",
                 fontFamily: "monospace",
-                backgroundColor: colors.primary_purple,
+                backgroundColor: colors.primary_red,
                 color: colors.primary_white,
                 border: "none",
                 borderRadius: "5px",
-                margin: "1px",
+                margin: "5px",
                 transition: "background-color 0.3s ease",
               }}
             >
@@ -114,11 +114,11 @@ export default function Timer() {
                 fontSize: "12px",
                 padding: "18px",
                 fontFamily: "monospace",
-                backgroundColor: colors.primary_purple,
+                backgroundColor: colors.primary_red,
                 color: colors.primary_white,
                 border: "none",
                 borderRadius: "5px",
-                margin: "1px",
+                margin: "5px",
               }}
             >
               Stop
@@ -130,11 +130,11 @@ export default function Timer() {
                 fontSize: "12px",
                 padding: "18px",
                 fontFamily: "monospace",
-                backgroundColor: colors.primary_purple,
+                backgroundColor: colors.primary_red,
                 color: colors.primary_white,
                 border: "none",
                 borderRadius: "5px",
-                margin: "1px",
+                margin: "5px",
               }}
             >
               Restart
