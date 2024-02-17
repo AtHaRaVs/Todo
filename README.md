@@ -1,11 +1,12 @@
 
-# WHAT'S NEW (Update 2.0)
+# WHAT'S NEW (Update 2.1)
 -> UI enhancements
-![screencapture-atharavs-github-io-Todo-2024-02-11-03_21_26](https://github.com/AtHaRaVs/Todo/assets/99896281/d4720bbd-4ca4-45e7-a89e-1772ab72412a)
+![screencapture-atharavs-github-io-Todo-2024-02-11-09_51_30](https://github.com/AtHaRaVs/Todo/assets/99896281/9b5d6ac8-b0a5-45a7-ba8f-4cd4650e72bc)
 Older UI 
 
-![screencapture-atharavs-github-io-Todo-2024-02-11-09_51_30](https://github.com/AtHaRaVs/Todo/assets/99896281/9b5d6ac8-b0a5-45a7-ba8f-4cd4650e72bc)
+![Screenshot 2024-02-17 080854](https://github.com/AtHaRaVs/Todo/assets/99896281/133bac9e-ebc4-401a-b66f-86962178f37b)
 Newer UI
+
 
 
 
